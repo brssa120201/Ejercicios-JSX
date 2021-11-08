@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="Ejercicio2">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+const data = {
+  title_1: "Página inicial de Juan Tuesta",
+  paragraph_1: "Bienvenidos a mi página personal. Soy un alumno de la Universidad de Deusto y esta es mi pagina inicial, con la lista de mis enlaces favoritos y otra información de interés ",
+  
+  title_2: "Enlaces favoritos",
+  enlace_1: "Páginas personales",
+  enlace_2: "Páginas de referencia",
+  enlace_3: "Portales ",
+  enlace_4: "Publicaciones",
+  
+  
+  enlace_5: "Documentalistas",
+  sub_enlace_1:"Charkes F.Golfarb",
+  sub_enlace_2:"Lou Burnard",
+  sub_enlace_3:"Tim Berners-Lee",
+  enlace_6: "Historiadores ",
+  enlace_7: "Lingüistas",
+  enlace_8: "Traductores",
+
+  title_4: "Páginas de referencia",
+  enlace_9: "Bibliotecas universitarias ",
+  enlace_10: "Centros de documentación",
+  enlace_11: "Museos de arte contemporáneo",
+  enlace_12: "Medios de comunicación ",
+
+  title_5: "Portales",
+  enlace_13: "Inicio",
+  enlace_14: "Telepolis",
+  enlace_15: "Ciudades",
+  enlace_16: "Terra",
+
+  title_6: "Publicaciones",
+  enlace_17: "Ciberp@ís",
+  enlace_18: "Diario Tecnologías de la Información ",
+  enlace_19: "The Standard",
+  enlace_20: "Infoworld",
+  enlace_21: "Wired",
+
+
+  pie_de_pagina:"Juan Tuesta, Universidad de Deusto, marzo 2002"
+ 
+  
+}
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <p>{data.paragraph_1}</p>
+    <h2>{data.title_2}</h2>
+    <ol>
+        <li><a href="enlace_1">{data.enlace_1}</a></li>
+        <li>{data.enlace_2}</li>
+        <li>{data.enlace_3}</li>
+        <li>{data.enlace_4}</li>
+    </ol>
+   
+    <h2>{data.enlace_1}</h2>
+    
+    <ol>
+        <li>{data.enlace_5}</li>
+        <ul>
+            <li>{data.sub_enlace_1}</li>
+            <li>{data.sub_enlace_2}</li>
+            <li>{data.sub_enlace_3}</li>
+        </ul>
+        <li>{data.enlace_6}</li>
+        <li>{data.enlace_7}</li>
+        <li>{data.enlace_8}</li>
+    </ol>
+  
+    <h2>{data.title_4}</h2>
+    <ol>
+        <li>{data.enlace_9}</li>
+        <li>{data.enlace_10}</li>
+        <li>{data.enlace_11}</li>
+        <li>{data.enlace_12}</li>
+    </ol>
+    <h2>{data.title_5}</h2>
+    <ol>
+        <li>{data.enlace_13}</li>
+        <li>{data.enlace_14}</li>
+        <li>{data.enlace_15}</li>
+        <li>{data.enlace_16}</li>
+    </ol>
+    <h2>{data.title_6}</h2>
+    <ol>
+        <li>{data.enlace_17}</li>
+        <li>{data.enlace_18}</li>
+        <li>{data.enlace_19}</li>
+        <li>{data.enlace_20}</li>
+        <li>{data.enlace_21}</li>
+    </ol>
+    <footer>
+        <i>{data.pie_de_pagina}</i>
+    </footer>
+   
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('Ejercicio2')
+);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+const data = {
+  title_1: "El noticiero Next University",
+  title_2: "Programas de Tecnología ",
+  title_3: "Programa de Negocio",
+  sub_title_1: "Desarrollador Web ",
+  sub_title_2: "Next University  ",
+  sub_title_3: "Android ",
+  sub_title_4:"Mercado Digital",
+  paragraph_1: "lanza su programa de formación ",
+  paragraph_2: "con la finalidad de capacitar a personas en las tendencias actuales sobre tecnologías, en el caso de desarrollo web, se basa temas relacionados a la implementación de Front-End con tecnologías y Frameworks, tales como: ",
+  paragraph_3: "HTMLS, CSS, JavaScript, Boostrap, entre otros.",
+  paragraph_4:"En ",
+  paragraph_5:"te ofrecemos el programa ",
+  paragraph_6:"que te da las herramientas necesarias para diseñar e implementar aplicaciones Android para dispositivos móviles, partiendo de un conocimiento básico de ",
+  paragraph_7:"java ",
+  paragraph_8:" , utilizando el entorno de desarrollo ",
+  paragraph_9:" Android Studio",
+  paragraph_10:" Aprenderás los aspectos fundamentales para crear aplicaciones Android interactivas, dinámicas y exitosas utilizando técnicas para el manejo de recursos, datos, segundos planos, localización, sensores, animaciones, gráficos, multimedia y monetización.",
+  paragraph_11:"coloca a tu disposición de programa de  ",
+  paragraph_12:"Sabias que… Mercadeo Digital o Digital Marketing es mucho mas que hacer y publicar anuncios. Se trata del consumidor y la estrategia de negocio.Estos son los puntos de partida para que cualquier acción de mercadeo digital ",
+  paragraph_13:"sea exitosa y optimice la inversión. ",
+  paragraph_14:"Este certificado, es un programa completo y practico, que permite entender al consumidor, la industria, la competencia y los retos del negocio propio, para crear e implementar estrategias a la medida de diferentes plataformas y medios digitales. Por supuesto, monitoreando los resultados para tomar decisiones en tiempo real. "
+  
+}
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <h2>{data.title_2}</h2>
+    <h3>{data.sub_title_1}</h3>
+    <p><b><i>{data.sub_title_2}</i></b> 
+     {data.paragraph_1} 
+    <b>"{data.sub_title_1}" </b>
+     {data.paragraph_2} 
+     <i>{data.paragraph_3}</i>
+    </p>
+     <h3>{data.sub_title_3}</h3>
+     <p>
+     {data.paragraph_4}
+     <b><i>{data.sub_title_2}</i></b> 
+     {data.paragraph_5}
+     <b>{data.sub_title_3}</b> 
+     {data.paragraph_6}
+     <i>{data.paragraph_7}</i>
+     {data.paragraph_8}
+     <i>{data.paragraph_9}</i>
+     {data.paragraph_10}
+    </p>
+    <h2>{data.title_2}</h2>
+    <h3>{data.sub_title_4}</h3>
+    <p><b><i>{data.sub_title_2}</i></b> 
+      {data.paragraph_11} 
+      <b>"{data.sub_title_4}"</b>
+      {data.paragraph_12} 
+      <i>{data.paragraph_13}</i>
+      {data.paragraph_14} 
+    </p> 
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>

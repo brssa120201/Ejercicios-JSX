@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+   
+    <div id="Ejercicio2">
+    </div>
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+    
+    
+const data = {
+  logo:"Imagenes/Recetas.png",
+  title_1: "Recetas.com",
+  link_1:"Recetas principales",
+  link_2:"Postres Latinos",
+  paragraph_1: "Bienvenido a nuestro sitio web sobre gastronomía latina, te invitamos a preparar nuestras recetas ",
+  Sub_titulo_1:"Nuevas recetas",
+  Sub_titulo_2:"**Arroz Criollo**",
+  Sub_titulo_3:"Ingredientes",
+  Sub_titulo_4:"Preparación ",
+  tie_pre:"Tiempo de preparacion:",
+  tie_pre_1:"45 minutos",
+  Nro_por:"Numero de porciones:",
+  Nro_por_1:"4",
+  ing_1:"Salsa de tomate",
+  ing_2:"2 cucharadas de aceite 14gr",
+  ing_3:"1 cebolla larga picada 45gr",
+  ing_4:"2 dientes de ajo finamente picado 3gr",
+  ing_5:"1 pimentón rojo picado en cuadritos 60gr",
+  ing_6:"1 taza de arroz blanco 225gr",
+  ing_7:"1 taza de maíz desgranado 79gr",
+  ing_8:"150gr de pechuga de pollo cocinado y desmechado",
+  ing_9:"Sal al gusto ",
+  preparacion_1:"Calentar en una olla el aceite, sofreír la cebolla junto con el ajo, el pimentón por 3 minutos ",
+  preparacion_2:"Adicionar el arroz y continúa sofriendo para que se dore",
+  preparacion_3:"Agregar el pollo, el maíz desgranado y las verduras",
+  preparacion_4:"Mezclar todo, rectificar sal y dejar cocinar hasta que seque ",
+  preparacion_5:"Bajar el fuego, tapar la olla y continuar la cocción por 25 minutos mas ",
+  ref:"Esta rica receta fue proporcionada por Maria Paula"  
+  
+}
+
+const element = (
+    
+  <div>
+    
+    <h1><img width= "15%" height='15%' src={data.logo}></img>{data.title_1}</h1>
+    <a href="link_1">{data.link_1}</a> / <a href="link_2">{data.link_2}</a>
+    <p>{data.paragraph_1}</p>
+    <h2>{data.Sub_titulo_1}</h2>
+    <h3>{data.Sub_titulo_2}</h3>
+    <p>{data.tie_pre} <b>{data.tie_pre_1}</b> {data.Nro_por} <b>{data.Nro_por_1}</b> </p>
+    <h3>{data.Sub_titulo_3}</h3>
+    <ul>
+        <li><b>{data.ing_1}</b></li>
+        <li><b>{data.ing_2}</b></li>
+        <li><b>{data.ing_3}</b></li>
+        <li><b>{data.ing_4}</b></li>
+        <li><b>{data.ing_5}</b></li>
+        <li><b>{data.ing_6}</b></li>
+        <li><b>{data.ing_7}</b></li>
+        <li><b>{data.ing_8}</b></li>
+        <li><b>{data.ing_9}</b></li> 
+    </ul>
+    <h3>{data.Sub_titulo_4}</h3>
+    <ol>
+        <li>{data.preparacion_1}</li>
+        <li>{data.preparacion_2}</li>
+        <li>{data.preparacion_3}</li>
+        <li>{data.preparacion_4}</li>
+        <li>{data.preparacion_5}</li>  
+    </ol>
+    
+    <p>{data.ref}</p>
+
+
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('Ejercicio2')
+);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="Ejercicio2">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+const data = {
+  title_1: "Página inicial de Juan Tuesta",
+  paragraph_1: "Bienvenidos a mi página personal. Soy un alumno de la Universidad de Deusto y esta es mi pagina inicial, con la lista de mis enlaces favoritos y otra información de interés ",
+  title_2: "Enlaces favoritos:",
+  enlace_1: "Internet ",
+  enlace_2: "Google ",
+  enlace_3: "Aldea global ",
+  enlace_4: "Manual de HTML ",
+  pie_de_pagina:"Juan Tuesta, Universidad de Deusto, marzo 2002" 
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <p>{data.paragraph_1}</p>
+    <h2>{data.title_2}</h2>
+    <ol>
+        <li>{data.enlace_1}</li>
+        <li>{data.enlace_2}</li>
+        <li>{data.enlace_3}</li>
+        <li>{data.enlace_4}</li>
+    </ol>
+    <footer>
+        <i>{data.pie_de_pagina}</i>
+    </footer>
+   
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('Ejercicio2')
+);
+    </script>
+  </body>
+</html>

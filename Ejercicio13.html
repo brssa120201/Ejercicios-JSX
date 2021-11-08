@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="Ejercicio2">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Video BHP",
+  paragraph_1:"El video es muy corto, pero en el se esta mostrando un logo de una persona que esta estudiando Ingenieria de sistemas y telecomunicaciones de la Universidad de Manizales ",
+  video:"Audio-Video/video.mp4",
+  pie_de_pagina:"Brissa Higuita Patiño, Universidad de Manizales, 2021"
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <p>{data.paragraph_1}</p>
+    <video width='320' height='240' controls poster='Imagenes/UM.png' 
+    src={data.video} type='video/mp4'>    
+     </video>
+     
+    <footer>
+        <i>{data.pie_de_pagina}</i>
+    </footer>
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('Ejercicio2')
+);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="Ejercicio2">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      
+const data = {
+  title_1: "Destinos Turísticos ",
+  
+  title_2: "América",
+
+  sub_title_1: "Argentina",
+  dest_1_1:"Buenos Aires",
+  dest_1_2:"Bariloche",
+  sub_title_2: "Brasil",
+  dest_2_1:"Rio de Janeiro",
+  dest_2_2:"Brasilia",
+  sub_title_3: "Chile",
+  dest_3_1:"Santiago",
+  dest_3_2:"Valparaíso",
+  sub_title_4: "Colombia ",
+  dest_4_1:"Bogotá",
+  dest_4_2:"Cartagena de Indias",
+  sub_title_5: "Estados Unidos ",
+  dest_5_1:"New York",
+  dest_5_2:"San Francisco",
+  sub_title_6: "México",
+  dest_6_1:"Cancún",
+  dest_6_2:"Acapulco",
+  sub_title_7: "Perú ",
+  dest_7_1:"Lima",
+  dest_7_2:"Cuzco",
+  sub_title_8: "Venezuela",
+  dest_8_1:"Margarita",
+  dest_8_2:"Mérida "
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <h2>{data.title_2}</h2>
+    <ol>
+      <li><b>{data.sub_title_1}</b></li>
+        <ol>
+          <li>{data.dest_1_1}</li>
+          <li>{data.dest_1_2}</li>
+        </ol>
+      
+      <li><b>{data.sub_title_2}</b></li>
+        <ol>
+          <li>{data.dest_2_1}</li>
+          <li>{data.dest_2_2}</li>
+        </ol>
+      <li><b>{data.sub_title_3}</b></li>
+        <ol>
+          <li>{data.dest_3_1}</li>
+          <li>{data.dest_3_2}</li>
+        </ol>
+      <li><b>{data.sub_title_4}</b></li>
+        <ol>
+          <li>{data.dest_4_1}</li>
+          <li>{data.dest_4_2}</li>
+        </ol>
+      <li><b>{data.sub_title_5}</b></li>
+        <ol>
+          <li>{data.dest_5_1}</li>
+          <li>{data.dest_5_2}</li>
+        </ol>
+      <li><b>{data.sub_title_6}</b></li>
+        <ol>
+          <li>{data.dest_6_1}</li>
+          <li>{data.dest_6_2}</li>
+        </ol>
+      <li><b>{data.sub_title_7}</b></li>
+        <ol>
+          <li>{data.dest_7_1}</li>
+          <li>{data.dest_7_2}</li>
+        </ol>
+      <li><b>{data.sub_title_8}</b></li>
+        <ol>
+          <li>{data.dest_8_1}</li>
+          <li>{data.dest_8_2}</li>
+        </ol>
+    </ol>
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('Ejercicio2')
+);
+    </script>
+  </body>
+</html>

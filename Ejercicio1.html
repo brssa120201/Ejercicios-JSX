@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+
+const data = {
+  title_1: "Plato de la semana",
+  title_2: "Berenjenas fritas",
+  paragraph_1: "Comensales: 4 personas",
+  paragraph_2: "Tiempo de preparación: 10 minutos ",
+  paragraph_3: "Tiempo de cocción : 12 minutos",
+  paragraph_4:"Ingredientes: ",
+  paragraph_5:"4 berenjenas",
+  paragraph_6:"Sal",
+  paragraph_7:"Pimienta",
+  paragraph_8:"4 cucharadas de harina y aceite",
+  paragraph_9:"Preparación: ",
+  paragraph_10:"Lavar las berengenas",
+  paragraph_11:"Cortarlas en rodajas",
+  paragraph_12:"Espolvorearlas con sal",
+  paragraph_13:"Dejar que suelten el agua durante 30 minutos",
+  paragraph_14:"Enharizarlas, ponerlas a freir durante 5 minutos en aceite bien caliente",
+  
+}
+
+const element = (
+  <div>
+    <h1>{data.title_1}</h1>
+    <h2>{data.title_2}</h2>
+    <p>{data.paragraph_1}</p>
+    <p>{data.paragraph_2}</p>
+    <p>{data.paragraph_3}</p>
+    <p><strong>{data.paragraph_4}</strong></p>
+    <p>{data.paragraph_5}<br/>
+    {data.paragraph_6}<br/>{data.paragraph_7}<br/>
+    {data.paragraph_8}
+    </p>
+    <p><strong>{data.paragraph_9}</strong></p>
+    <p>{data.paragraph_10}<br/>
+    {data.paragraph_11}<br/>
+    {data.paragraph_12}<br/>
+    {data.paragraph_13}<br/>
+    {data.paragraph_14}<br/>
+    </p>
+   
+  </div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+    </script>
+  </body>
+</html>
