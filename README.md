@@ -4,7 +4,7 @@
 
 ## EJERCICIO 1 
 
-![1](Evidencias/Ejercicio1.PNG)
+![1](Evidencias/Ejercicio1.png)
 
 ## EJERCICIO 2
 
